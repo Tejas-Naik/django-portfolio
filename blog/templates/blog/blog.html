@@ -7,5 +7,10 @@
   </head>
   <body>
     <h1>All Blogs</h1>
+    {% for blog in blogs %}
+    <h3>{{ blog.title }}</h3>
+    <p>{{ blog.date }}</p>
+    <p>{{ blog.description }}</p>
+    {%endfor%}
   </body>
 </html>
